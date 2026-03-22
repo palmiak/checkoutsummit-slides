@@ -1,8 +1,9 @@
 ---
 theme: default
-title: 'WooCommerce Hosts: Do They Deliver?'
+title: 'WooCommerce Hosts Promise "Advanced Security". But Do They Deliver?'
 highlighter: shiki
 canvasWidth: 1920
+transition: fade
 layout: default
 class: title-slide
 ---
@@ -13,27 +14,26 @@ class: title-slide
     $ ./pentest <span style="color:var(--purple);">--target</span>="woocommerce-hosts" <span style="color:var(--purple);">--exploits</span>="20+"
   </div>
   <div class="title-main">
-    Hosts promise<br>
-    "advanced security."<br>
-    Do they <em style="color:var(--purple);">deliver?</em><span class="cursor" style="background:var(--purple);"></span>
+    WooCommerce Hosts Promise<br>
+    <em style="color:var(--purple);">"Advanced Security."</em><span class="cursor" style="background:var(--purple);"></span>
+  </div>
+  <div class="title-sub">
+    But Do They Deliver? We Tested 20+ Providers Using Real Exploits.
   </div>
 </div>
 <div class="title-event">Checkout Summit 2026</div>
-<div class="s-num">01</div>
 
 ---
 layout: image-only
 ---
 
 <img src="/matt-tweet.png" style="max-width:88%;max-height:78vh;object-fit:contain;" />
-<div class="s-num">02</div>
 
 ---
 layout: image-only
 ---
 
 <img src="/mj-took-it-personally.png" style="max-width:88%;max-height:78vh;object-fit:contain;" />
-<div class="s-num">03</div>
 
 ---
 layout: chapter
@@ -46,7 +46,6 @@ color: purple
   <div class="chapter-eyebrow">Chapter 01</div>
   <div class="chapter-title">The Threat<br><em>Landscape</em></div>
 </div>
-<div class="s-num">04</div>
 
 ---
 layout: content
@@ -69,7 +68,6 @@ gutter: Market Dominance
     <div class="block-text">One exploit technique = thousands of potential targets. High-value payload: payment data, customer records, admin access.</div>
   </Block>
 </Blocks>
-<div class="s-num">05</div>
 
 ---
 layout: stat
@@ -81,7 +79,6 @@ layout: stat
   sublabel="new vulnerabilities disclosed in a single year"
   sub="+42% year-over-year"
 />
-<div class="s-num">06</div>
 
 ---
 layout: stat
@@ -94,7 +91,6 @@ layout: stat
   sublabel="of vulnerabilities are in plugins — not core"
   sub="Only 6 CVEs found in WordPress core in 2025"
 />
-<div class="s-num">07</div>
 
 ---
 layout: stat
@@ -108,7 +104,6 @@ layout: stat
   sublabel="median time from public disclosure to mass exploitation"
   sub="You don't have days to respond. You have hours."
 />
-<div class="s-num">08</div>
 
 ---
 layout: stat
@@ -121,7 +116,6 @@ layout: stat
   sublabel="of vulnerabilities had no patch at time of disclosure"
   sub="&quot;Keep plugins updated&quot; isn't enough on its own"
 />
-<div class="s-num">09</div>
 
 ---
 layout: content
@@ -133,7 +127,6 @@ gutter: CVSS 10.0
 <Block variant="red" label="Result" labelAccent="red">
   <div class="block-text"><strong>Instant admin access.</strong> No username. No password. No complexity. One URL, full control.</div>
 </Block>
-<div class="s-num">10</div>
 
 ---
 layout: content
@@ -156,7 +149,6 @@ gutter: Case Study
     <div class="block-text">Attackers installed the old vulnerable version as a <strong>permanent backdoor</strong> on compromised sites.</div>
   </Block>
 </Blocks>
-<div class="s-num">11</div>
 
 ---
 layout: chapter
@@ -169,7 +161,6 @@ color: purple
   <div class="chapter-eyebrow">Chapter 02</div>
   <div class="chapter-title">What Your<br>Clients <em>Face</em></div>
 </div>
-<div class="s-num">12</div>
 
 ---
 layout: content
@@ -188,7 +179,6 @@ gutter: Financial Impact
     <div class="block-text"><strong>Merchant account suspension or permanent ban.</strong> Revenue stops cold.</div>
   </Block>
 </Blocks>
-<div class="s-num">13</div>
 
 ---
 layout: content
@@ -212,7 +202,6 @@ gutter: Legal Impact
     </Block>
   </BlocksRow>
 </Blocks>
-<div class="s-num">14</div>
 
 ---
 layout: content
@@ -231,7 +220,6 @@ gutter: Reputational Impact
     <div class="block-text"><strong>For small and mid-size stores, this is often fatal.</strong></div>
   </Block>
 </Blocks>
-<div class="s-num">15</div>
 
 ---
 layout: statement
@@ -240,7 +228,6 @@ layout: statement
 <div class="statement-text">
   A hacked WooCommerce store is a <em>business crisis.</em>
 </div>
-<div class="s-num">16</div>
 
 ---
 layout: chapter
@@ -253,7 +240,6 @@ color: purple
   <div class="chapter-eyebrow">Chapter 03</div>
   <div class="chapter-title">Testing the<br><em>Claims</em></div>
 </div>
-<div class="s-num">17</div>
 
 ---
 layout: content
@@ -264,7 +250,6 @@ gutter: The Claim
 <QuoteBlock source="— Kinsta documentation">
   &ldquo;If your site is hosted at Kinsta, you don&apos;t need to install a third-party security plugin because we have many popular security features built into our infrastructure.&rdquo;
 </QuoteBlock>
-<div class="s-num">18</div>
 
 ---
 layout: content
@@ -279,7 +264,6 @@ gutter: Methodology
   <li><span>Same test setup across all providers, independent observers</span></li>
   <li><span>WooCommerce-specific plugins included</span></li>
 </BulletList>
-<div class="s-num">19</div>
 
 ---
 layout: stat
@@ -292,7 +276,6 @@ layout: stat
   sublabel="tested across different tiers and regions"
   sub="30 vulnerabilities · all security features enabled on every provider"
 />
-<div class="s-num">20</div>
 
 ---
 layout: stat
@@ -305,7 +288,6 @@ layout: stat
   sublabel="of attacks blocked on average"
   sub="74% getting through — with all defenses active"
 />
-<div class="s-num">21</div>
 
 ---
 layout: stat
@@ -318,7 +300,6 @@ layout: stat
   sublabel="of the attacks that hand an attacker full admin access"
   sub="Nearly 9 out of 10 got through — across all 18 providers"
 />
-<div class="s-num">22</div>
 
 ---
 layout: stat
@@ -331,7 +312,6 @@ layout: stat
   sublabel="the one category where hosting security held up"
   sub="WAFs recognize classic attack patterns — just not WordPress-specific ones"
 />
-<div class="s-num">23</div>
 
 ---
 layout: stat
@@ -345,7 +325,6 @@ layout: stat
   sublabel="of attacks bypassed defenses in our pilot"
   sub="5 providers · 11 vulnerabilities · this is what motivated the main study"
 />
-<div class="s-num">24</div>
 
 ---
 layout: chapter
@@ -358,7 +337,6 @@ color: purple
   <div class="chapter-eyebrow">Chapter 04</div>
   <div class="chapter-title">Why Protection<br><em>Fails</em></div>
 </div>
-<div class="s-num">25</div>
 
 ---
 layout: content
@@ -374,7 +352,6 @@ gutter: The Mismatch
   rightTitle="Normal traffic"
   :rightItems="['Valid admin-ajax.php call with malicious payload', 'Legitimate plugin endpoint exploited through its own logic', 'Privilege escalation via plugin authentication flow']"
 />
-<div class="s-num">26</div>
 
 ---
 layout: content
@@ -393,7 +370,6 @@ gutter: Transparency
     <div class="block-text">Different hosts running the <strong>same tools</strong> showed the <strong>same gaps.</strong> This is a structural problem, not a vendor problem.</div>
   </Block>
 </Blocks>
-<div class="s-num">27</div>
 
 ---
 layout: image-only
@@ -403,14 +379,12 @@ layout: image-only
   We notified the hosts.<br>Many did nothing.
 </div>
 <img src="/this-is-fine.jpg" style="max-width:min(680px,86%);max-height:420px;object-fit:contain;" />
-<div class="s-num">28</div>
 
 ---
 layout: image-only
 ---
 
 <img src="/grus-plan.png" style="max-width:min(780px,88%);max-height:540px;object-fit:contain;" />
-<div class="s-num">29</div>
 
 ---
 layout: chapter
@@ -423,7 +397,6 @@ color: purple
   <div class="chapter-eyebrow">Chapter 05</div>
   <div class="chapter-title">The<br><em>Solution</em></div>
 </div>
-<div class="s-num">30</div>
 
 ---
 layout: cheese
@@ -447,7 +420,6 @@ gutter: Defense in Depth
   </Blocks>
 </template>
 
-<div class="s-num">31</div>
 
 ---
 layout: cheese
@@ -474,7 +446,6 @@ gutter: Defense in Depth
   </Blocks>
 </template>
 
-<div class="s-num">32</div>
 
 ---
 layout: cheese
@@ -498,7 +469,6 @@ gutter: Defense in Depth
   </Blocks>
 </template>
 
-<div class="s-num">33</div>
 
 ---
 layout: content
@@ -511,7 +481,6 @@ gutter: Action Items
   <li><span><em>Virtual patching</em> should ship with every WooCommerce project you deliver</span></li>
   <li><span><em>Vulnerability monitoring</em> is a default recommendation, not an afterthought</span></li>
 </BulletList>
-<div class="s-num">34</div>
 
 ---
 layout: conclusion
@@ -520,14 +489,12 @@ layout: conclusion
 <div class="s-label accent-green">Conclusion</div>
 <div class="conclusion-title">You know what<br>to <em style="color:var(--green);">tell them.</em></div>
 <div class="conclusion-sub">Their host won&apos;t save them. But you can.</div>
-<div class="s-num">35</div>
 
 ---
 layout: thanks
 ---
 
 <div class="thanks-word">Thank<br>you.</div>
-<div class="s-num">36</div>
 
 ---
 layout: content
@@ -541,4 +508,9 @@ gutter: One More Thing
 <div class="kicker-warning">
   The same AI writing that code<br>is already writing the exploits.
 </div>
-<div class="s-num">37</div>
+
+---
+layout: thanks
+---
+
+<div class="thanks-word">What questions<br>do you <em style="color:var(--green);font-style:normal;">have?</em></div>

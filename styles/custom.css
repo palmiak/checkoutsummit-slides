@@ -10,8 +10,8 @@
   --border:       rgba(255,255,255,0.15);
   --border-2:     rgba(255,255,255,0.28);
   --text-1:       #ffffff;
-  --text-2:       rgba(255,255,255,0.75);
-  --text-3:       rgba(255,255,255,0.4);
+  --text-2:       rgba(255,255,255,0.92);
+  --text-3:       rgba(255,255,255,0.88);
   --red:          #e03e2d;
   --red-dim:      rgba(224,62,45,0.18);
   --red-border:   rgba(224,62,45,0.55);
@@ -446,6 +446,16 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
   color: var(--text-1);
 }
 .title-main em { font-style: normal; color: var(--red); }
+
+.title-sub {
+  font-family: var(--sans);
+  font-size: clamp(16px, 1.8vw, 26px);
+  font-weight: 300;
+  color: var(--text-2);
+  margin-top: clamp(16px, 2vw, 28px);
+  letter-spacing: 0.01em;
+  line-height: 1.5;
+}
 
 .title-event {
   position: absolute;
