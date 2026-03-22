@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.slidev/
+
+*.local
+.env
+
+.DS_Store
+Thumbs.db
