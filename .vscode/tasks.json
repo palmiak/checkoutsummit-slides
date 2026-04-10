@@ -3,8 +3,14 @@
   "tasks": [
     {
       "label": "Slidev: dev server",
-      "type": "npm",
-      "script": "dev",
+      "type": "shell",
+      "command": "test -d node_modules || npm install && npm run dev",
+      "windows": {
+        "command": "if not exist node_modules npm install && npm run dev"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
       "isBackground": true,
       "presentation": {
         "reveal": "silent",
