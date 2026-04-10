@@ -435,10 +435,10 @@ gutter: Defense in Depth
   <div class="content-headline">WordPress-aware<br>protection</div>
   <Blocks>
     <Block>
-      <div class="block-text">A WordPress-aware firewall understands plugin request context — it catches what network WAFs can&apos;t see.</div>
+      <div class="block-text">A WordPress-aware firewall understands plugin request context</div>
     </Block>
     <Block label="Virtual patching">
-      <div class="block-text">Blocks known exploits <strong>before a code fix exists</strong> — closing the gap between disclosure and patch.</div>
+      <div class="block-text">Blocks known exploits <strong>before a code fix exists</strong></div>
     </Block>
     <Block variant="red" label="But" labelAccent="red">
       <div class="block-text">Still has holes. <strong>Zero-days and unknown plugins</strong> can slip through.</div>
