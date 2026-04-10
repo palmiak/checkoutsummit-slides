@@ -249,12 +249,12 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 .content-gutter {
   width: clamp(100px, 14vw, 180px);
   flex-shrink: 0;
-  padding: var(--v-center) clamp(24px, 3vw, 40px);
-  border-right: 1px solid var(--border);
+  align-self: flex-end;
+  /* Shrink to the label — avoid a full-height empty column beside content */
+  padding: 0 clamp(24px, 3vw, 40px) clamp(40px, 6vh, 72px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: clamp(52px, 9vh, 80px);
 }
 
 .gutter-label {
@@ -270,6 +270,8 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 
 .content-main {
   flex: 1;
+  min-height: 0;
+  border-left: 1px solid var(--border);
   padding: var(--v-center) clamp(36px, 5vw, 72px);
   display: flex;
   flex-direction: column;
@@ -288,6 +290,42 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 .content-headline em       { font-style: normal; color: var(--red); }
 .content-headline em.amber { color: var(--amber); }
 .content-headline em.green { color: var(--green); }
+
+/* Slightly denser type on content slides (heavy blocks / quotes / lists) */
+.content-slide .content-main {
+  padding: clamp(32px, 5vh, 64px) clamp(28px, 4.5vw, 64px);
+}
+.content-slide .content-headline {
+  font-size: clamp(26px, 3.65vw, 50px);
+  margin-bottom: clamp(22px, 3.2vw, 40px);
+  line-height: 1.18;
+}
+.content-slide .block {
+  padding: clamp(12px, 1.65vw, 18px) clamp(14px, 2.1vw, 24px);
+}
+.content-slide .block-text {
+  font-size: clamp(15px, 1.65vw, 21px);
+  line-height: 1.55;
+}
+.content-slide .block-label {
+  font-size: clamp(9px, 0.9vw, 12px);
+  margin-bottom: 6px;
+}
+.content-slide .blist li {
+  font-size: clamp(16px, 1.85vw, 24px);
+  line-height: 1.5;
+}
+.content-slide .quote-text {
+  font-size: clamp(19px, 2.35vw, 30px);
+  line-height: 1.55;
+}
+.content-slide .code-body {
+  font-size: clamp(13px, 1.45vw, 18px);
+  padding: clamp(14px, 2vw, 22px);
+}
+.content-slide .blocks {
+  gap: clamp(6px, 1vw, 12px);
+}
 
 /* ─────────────────────────────────────────
    BLOCKS
@@ -483,6 +521,22 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 }
 
 /* ─────────────────────────────────────────
+   IMAGE-ONLY SLIDES (max-height % is relative to the slide body, not the viewport)
+───────────────────────────────────────── */
+.image-only-body {
+  flex-direction: column;
+  gap: clamp(20px, 2.4vw, 32px);
+  min-height: 0;
+}
+.image-only-asset {
+  max-width: 88%;
+  max-height: 85%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ─────────────────────────────────────────
    IMAGE PLACEHOLDER
 ───────────────────────────────────────── */
 .img-ph {
@@ -524,11 +578,11 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
   border: 1px solid var(--border);
   border-radius: 3px;
   overflow: hidden;
-  margin-top: clamp(24px, 4vw, 44px);
+  margin-top: clamp(18px, 3vw, 36px);
 }
 .compare-col {
   background: var(--bg);
-  padding: clamp(20px, 3vw, 36px);
+  padding: clamp(16px, 2.5vw, 28px);
 }
 .compare-col + .compare-col {
   border-left: 1px solid var(--border);
@@ -543,10 +597,10 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 }
 .compare-col-title {
   font-family: var(--mono);
-  font-size: clamp(18px, 2.2vw, 28px);
+  font-size: clamp(16px, 1.95vw, 24px);
   font-weight: 400;
   color: var(--text-1);
-  margin-bottom: clamp(14px, 2vw, 22px);
+  margin-bottom: clamp(12px, 1.6vw, 18px);
   line-height: 1.3;
 }
 .compare-items {
@@ -556,10 +610,10 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 }
 .compare-item {
   font-family: var(--sans);
-  font-size: clamp(15px, 1.8vw, 22px);
+  font-size: clamp(13px, 1.55vw, 19px);
   font-weight: 300;
   color: var(--text-2);
-  line-height: 1.5;
+  line-height: 1.45;
   padding-left: 14px;
   position: relative;
 }
@@ -606,7 +660,7 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
 }
 .thanks-word {
   font-family: var(--mono);
-  font-size: clamp(64px, 14vw, 176px);
+  font-size: clamp(52px, 11.5vw, 148px);
   font-weight: 300;
   line-height: 0.9;
   letter-spacing: -0.04em;
@@ -646,12 +700,20 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
   padding: 0;
   gap: 0;
 }
+.cheese-main {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  min-height: 0;
+  border-left: 1px solid var(--border);
+}
 .cheese-diagram {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: clamp(20px, 3vw, 48px);
+  padding: clamp(16px, 2.5vw, 40px);
   border-right: 1px solid var(--border);
 }
 .cheese-info {
@@ -659,7 +721,19 @@ html, body, #app, .slidev-root, .slidev-slides-wrapper, .slidev-slide-container 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: clamp(24px, 4vw, 56px) clamp(28px, 4vw, 60px);
+  min-height: 0;
+  padding: clamp(20px, 3.2vw, 48px) clamp(22px, 3.5vw, 52px);
+}
+.cheese-info .content-headline {
+  font-size: clamp(20px, 2.65vw, 34px);
+  margin-bottom: clamp(16px, 2.4vw, 26px);
+  line-height: 1.18;
+}
+.cheese-info .block-text {
+  font-size: clamp(14px, 1.55vw, 20px);
+}
+.cheese-info .blocks {
+  gap: clamp(6px, 1vw, 12px);
 }
 .cheese-layer-tag {
   font-family: var(--mono);

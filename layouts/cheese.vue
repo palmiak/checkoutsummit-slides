@@ -10,7 +10,7 @@ defineProps({
       <div class="content-gutter">
         <div class="gutter-label">{{ gutter }}</div>
       </div>
-      <div style="flex:1;display:flex;flex-direction:row;align-items:stretch;">
+      <div class="cheese-main">
         <div class="cheese-diagram">
           <slot name="diagram" />
         </div>

@@ -2,7 +2,7 @@
 theme: default
 title: 'WooCommerce Hosts Promise "Advanced Security". But Do They Deliver?'
 highlighter: shiki
-canvasWidth: 1920
+canvasWidth: 1280
 transition: fade
 layout: default
 class: title-slide
@@ -27,13 +27,13 @@ class: title-slide
 layout: image-only
 ---
 
-<img src="/matt-tweet.png" style="max-width:88%;max-height:78vh;object-fit:contain;" />
+<img src="/matt-tweet.png" class="image-only-asset" alt="" />
 
 ---
 layout: image-only
 ---
 
-<img src="/mj-took-it-personally.png" style="max-width:88%;max-height:78vh;object-fit:contain;" />
+<img src="/mj-took-it-personally.png" class="image-only-asset" alt="" />
 
 ---
 layout: chapter
@@ -56,11 +56,11 @@ gutter: Market Dominance
 <Blocks>
   <BlocksRow>
     <Block label="WordPress market share">
-      <div style="font-family:var(--mono);font-size:clamp(28px,4vw,52px);font-weight:300;color:var(--text-1);margin-bottom:4px;">43%</div>
+      <div style="font-family:var(--mono);font-size:clamp(24px,3.5vw,44px);font-weight:300;color:var(--text-1);margin-bottom:4px;">43%</div>
       <div class="block-text">of all websites</div>
     </Block>
     <Block label="WooCommerce share">
-      <div style="font-family:var(--mono);font-size:clamp(28px,4vw,52px);font-weight:300;color:var(--text-1);margin-bottom:4px;">~40%</div>
+      <div style="font-family:var(--mono);font-size:clamp(24px,3.5vw,44px);font-weight:300;color:var(--text-1);margin-bottom:4px;">~40%</div>
       <div class="block-text">of all online stores</div>
     </Block>
   </BlocksRow>
@@ -195,10 +195,10 @@ gutter: Legal Impact
   </Block>
   <BlocksRow>
     <Block variant="red" label="GDPR max fine" labelAccent="red">
-      <div class="block-text" style="font-size:clamp(14px,1.8vw,22px);font-weight:500;color:var(--text-1);">€20M or 4% of annual revenue</div>
+      <div class="block-text" style="font-size:clamp(13px,1.55vw,19px);font-weight:500;color:var(--text-1);">€20M or 4% of annual revenue</div>
     </Block>
     <Block label="And who gets the call?">
-      <div class="block-text" style="font-size:clamp(14px,1.8vw,22px);font-weight:500;color:var(--text-1);">You.</div>
+      <div class="block-text" style="font-size:clamp(13px,1.55vw,19px);font-weight:500;color:var(--text-1);">You.</div>
     </Block>
   </BlocksRow>
 </Blocks>
@@ -246,7 +246,7 @@ layout: content
 gutter: The Claim
 ---
 
-<div class="content-headline" style="margin-bottom:clamp(28px,5vw,52px);">Some hosts tell you not to<br>install security plugins</div>
+<div class="content-headline">Some hosts tell you not to<br>install security plugins</div>
 <QuoteBlock source="— Kinsta documentation">
   &ldquo;If your site is hosted at Kinsta, you don&apos;t need to install a third-party security plugin because we have many popular security features built into our infrastructure.&rdquo;
 </QuoteBlock>
@@ -409,7 +409,7 @@ gutter: Defense in Depth
 
 <template #info>
   <div class="cheese-layer-tag">Layer 01 / Network</div>
-  <div class="content-headline" style="font-size:clamp(22px,3vw,38px);margin-bottom:clamp(20px,3vw,32px);">Your host&apos;s<br>first line of defence</div>
+  <div class="content-headline">Your host&apos;s<br>first line of defence</div>
   <Blocks>
     <Block>
       <div class="block-text">Host WAF, DDoS protection, IP reputation filtering. Handles volumetric attacks and known bad actors well.</div>
@@ -432,7 +432,7 @@ gutter: Defense in Depth
 
 <template #info>
   <div class="cheese-layer-tag">Layer 02 / Application</div>
-  <div class="content-headline" style="font-size:clamp(22px,3vw,38px);margin-bottom:clamp(20px,3vw,32px);">WordPress-aware<br>protection</div>
+  <div class="content-headline">WordPress-aware<br>protection</div>
   <Blocks>
     <Block>
       <div class="block-text">A WordPress-aware firewall understands plugin request context — it catches what network WAFs can&apos;t see.</div>
@@ -458,7 +458,7 @@ gutter: Defense in Depth
 
 <template #info>
   <div class="cheese-layer-tag">Layer 03 / Operational</div>
-  <div class="content-headline" style="font-size:clamp(22px,3vw,38px);margin-bottom:clamp(20px,3vw,32px);">Every layer has holes.<br><em style="color:var(--green);">Together they don&apos;t.</em></div>
+  <div class="content-headline">Every layer has holes.<br><em style="color:var(--green);">Together they don&apos;t.</em></div>
   <Blocks>
     <Block>
       <div class="block-text">Vulnerability monitoring, fast patching cadence, incident response plan. Shrinks the window between disclosure and defence.</div>
